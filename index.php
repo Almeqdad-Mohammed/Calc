@@ -4,7 +4,7 @@ require_once 'Calculate.php';
       // fetch number info from thr form
       $num1  = $_POST['num1'];
       $num2  = $_POST['num2'];
-      $operator = $_GET['operator'];
+      $operator = $_POSTT['operator'];
 
       $calculate = new Calculate();
       if ($calculate->getvalidateform($num1, $num2, $operator)) {
