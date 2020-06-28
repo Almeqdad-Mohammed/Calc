@@ -2,8 +2,8 @@
 require_once 'Calculate.php';
     if ($_GET['operator']) {
       // fetch number info from thr form
-      $num1  = $_GET['num1'];
-      $num2  = $_GET['num2'];
+      $num1  = $_POST['num1'];
+      $num2  = $_POST['num2'];
       $operator = $_GET['operator'];
 
       $calculate = new Calculate();
@@ -85,7 +85,7 @@ require_once 'Calculate.php';
     <div class="contianer">
       <h1>Simple Calculate</h1>
       <!-- start form for submit info -->
-      <form class="" action="<?php echo $_SERVER['PHP_SELF'] ?>" method="get">
+      <form class="" action="<?php echo $_SERVER['PHP_SELF'] ?>" method="POST">
         <input type="number" name="num1" placeholder="Enter A Number "> <br>
         <input type="number" name="num2" placeholder="Enter A Number Too "><br>
         <!-- Here I Used The Button Element Instead OF select Element it's more readable than select  -->
