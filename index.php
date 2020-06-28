@@ -1,5 +1,5 @@
 <?php
-require_once 'include-calc/Calculate.php';
+require_once 'Calculate.php';
     if ($_GET['operator']) {
       // fetch number info from thr form
       $num1  = $_GET['num1'];
