@@ -1,6 +1,6 @@
 <?php
 require_once 'Calculate.php';
-    if ($_GET['operator']) {
+    if ($_POST['operator']) {
       // fetch number info from thr form
       $num1  = $_POST['num1'];
       $num2  = $_POST['num2'];
